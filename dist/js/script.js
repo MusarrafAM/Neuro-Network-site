@@ -55,11 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
       <ul class="hidden md:flex bg-gray-600 text-white rounded-2xl  lg:mr-[350px] md:mr-[50px] text-center mx-4">
       <a  href="../index.html"><li class="p-2 my-2 mr-2 ml-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">Home</li></a>
-      <a href="/dist/pages/about.html"><li class="p-2 my-2 mr-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">About</li></a>
-      <a href="/dist/pages/gallery.html"><li class="p-2 my-2 mr-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">Gallery</li></a>
-      <a href="/dist/pages/story.html"><li class="p-2 my-2 mr-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">Story</li></a>
-      <a href="/dist/pages/blog.html"><li class="p-2 my-2 mr-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">Blog</li></a>
-      <a href="/dist/pages/infohub.html"><li class="p-2 my-2 mr-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">Info Hub</li></a>
+      <a href="/pages/about.html"><li class="p-2 my-2 mr-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">About</li></a>
+      <a href="/pages/gallery.html"><li class="p-2 my-2 mr-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">Gallery</li></a>
+      <a href="/pages/story.html"><li class="p-2 my-2 mr-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">Story</li></a>
+      <a href="/pages/blog.html"><li class="p-2 my-2 mr-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">Blog</li></a>
+      <a href="/pages/infohub.html"><li class="p-2 my-2 mr-2 hover:bg-[#CAF100] hover:text-blue-600 duration-300 rounded-lg min-w-[80px] cursor-pointer">Info Hub</li></a>
       </ul>
       <div onclick="handleNav()" class="block md:hidden cursor-pointer" id="navIcon">
         <span id="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14 4H2a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2zm0 5H2a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2zm0 5H2a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2z"/></svg></span>
@@ -68,11 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
         <img src="../images/logo.jpg" alt="Logo">
         <ul class="uppercase p-4">
         <a href="../index.html"><li class="p-4 border-b border-b-gray-600 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">Home</li></a>
-        <a href="/dist/pages/about.html"><li class="p-4 border-b border-b-gray-600 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">About</li></a>
-        <a href="/dist/pages/gallery.html"><li class="p-4 border-b border-b-gray-600 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">Gallery</li></a>
-        <a href="/dist/pages/story.html"><li class="p-4 border-b border-b-gray-600 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">Story</li></a>
-        <a href="/dist/pages/blog.html"><li class="p-4 border-b border-b-gray-600 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">Blog</li></a>
-        <a href="/dist/pages/infohub.html"><li class="p-4 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">Info Hub</li></a>
+        <a href="/pages/about.html"><li class="p-4 border-b border-b-gray-600 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">About</li></a>
+        <a href="/pages/gallery.html"><li class="p-4 border-b border-b-gray-600 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">Gallery</li></a>
+        <a href="/pages/story.html"><li class="p-4 border-b border-b-gray-600 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">Story</li></a>
+        <a href="/pages/blog.html"><li class="p-4 border-b border-b-gray-600 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">Blog</li></a>
+        <a href="/pages/infohub.html"><li class="p-4 cursor-pointer hover:bg-[#CAF100] hover:text-blue-600 rounded-lg">Info Hub</li></a>
         </ul>
     </div>`;
     document.getElementById("navbar-placeholder").innerHTML = navbarHTML;
@@ -192,7 +192,7 @@ function showReview() {
 }
 
 // Reveal elements
-window.addEventListener('scroll', reveal);
+window.addEventListener("scroll", reveal);
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -204,7 +204,7 @@ function reveal() {
 
     if (revealtop < windowlength - revealpoint) {
       reveals[i].classList.add("active");
-    } 
+    }
     // ucomment if want the emelnts to hide after scroll up
     // else {
     //   reveals[i].classList.remove("active");
