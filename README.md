@@ -1,3 +1,3 @@
-# NeuroNetwork
-This is created for the website development Task.
 # Neuro-Network-site
+This is developed using html tailwind-css and javaScript
+
