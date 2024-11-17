@@ -1,0 +1,34 @@
+/* Line Animation */
+.gallery-h-bar {
+  text-align: center;
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+}
+
+.gallery-h-bar::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: crimson;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: gallery-bar-animate 4s linear infinite;
+}
+
+@keyframes gallery-bar-animate {
+  0% {
+    width: 100px;
+  }
+
+  50% {
+    width: 200px;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
