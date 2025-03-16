@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-2 gap-8 text-gray-300">
           <div class="first-half">
             <h1 class="text-[33px] leading-9 text-center lg:text-left pb-4 font-medium"> Have something to talk about <br/> with our professionals?</h1>
-            <div class="p-2 my-2 rounded-full border border-gray-500 flex mx-auto lg:mx-0 max-w-[400px] justify-between">
-              <input class="outline-none bg-gradient-to-r from-[#4A6F8B] to-[#4D7A8E]  w-[300px]" type="text" placeholder="Your email here"/>
+            <div class="p-2 my-2 rounded-full border hover:border-[#579F97] duration-100 border-gray-500 flex mx-auto lg:mx-0 max-w-[400px] justify-between">
+              <input class="outline-none bg-transparent   w-[300px]" type="text" placeholder="Your email here"/>
               <div class="hover:bg-[#579F97] duration-300 cursor-pointer rounded-full pt-[3px] pl-[2px] w-[25px] h-[25px]">
                 <svg class="text-white w-4 ml-0.5 rotate-[45deg]" data-name="1-Arrow Up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white"><path d="m26.71 10.29-10-10a1 1 0 0 0-1.41 0l-10 10 1.41 1.41L15 3.41V32h2V3.41l8.29 8.29z"/></svg>
               </div>
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="ml-10">
               <h1 class="mb-8 text-lg">Menu</h1> 
               <ul>
-                <li class="py-2 text-sm hover:text-[#CAF100]"><a href="../pages/about.html">About Us</a></li>
+                <li class="py-2 text-sm hover:text-[#CAF100]"><a href="./pages/about.html">About Us</a></li>
                 <li class="py-2 text-sm hover:text-[#CAF100]"><a href="#">Newsroom</a></li>
                 <li class="py-2 text-sm hover:text-[#CAF100]"><a href="#">Careers</a></li>
                 <li class="py-2 text-sm hover:text-[#CAF100]"><a href="#">Partnerships</a></li>
